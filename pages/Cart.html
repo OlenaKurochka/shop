@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/Cart.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light  header">
+            <a class="navbar-brand header_logo" href="../index.html"><img src="../image/logo.png" alt="logo" class="header__img"></a>
+            <button class="navbar-toggler button_main_menu" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navigation" id="navbarNav">
+              <ul class="navbar-nav header-top__nav uppercase">
+                <li class="nav-item header-top__nav-item">
+                    <a class="nav-link a_navigation" href="./CatalogPage.html">SHORTS</a>
+                </li>
+                <li class="nav-item header-top__nav-item">
+                    <a class="nav-link a_navigation" href="./CatalogPage.html">PANTS</a>
+                </li>
+                <li class="nav-item header-top__nav-item">
+                    <a class="nav-link a_navigation" href="./CatalogPage.html">SHIRTS</a>
+                </li>
+                <li class="nav-item header-top__nav-item">
+                    <a class="nav-link a_navigation" href="./CatalogPage.html">ACCESSORIES</a>
+                </li>
+                <li class="nav-item header-top__nav-item">
+                    <a class="nav-link a_navigation" href="./CatalogPage.html">SALE</a>
+                </li>
+                <li class="nav-item header-top__nav-item">
+                    <a class="nav-link a_navigation" href="./Cart.html"><img class="header-top__nav-item__img" src="../image/cart.svg" alt="cart"></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div class="story">
+            <div class="way">
+                <a href="../index.html" src="../image/home 1.png" alt="home">HOME</a>
+                <img src="../image/right-arrow 1.png" alt="right_arrow">
+                <a href="./CatalogPage.html">CATALOG</a>
+                <img src="../image/right-arrow 1.png" alt="right_arrow">
+                <a href="3">CART</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="cart_empty" id="cart_empty">
+            <h1>Your cart is empty </h1>
+            <img src="../image/cart.svg" alt="cart">
+            <a href="./CatalogPage.html">Go to the catalog</a>
+        </div>
+        <div class="main_table"></div>
+        <div class="total">
+            <p>Subtotal: $ <span class="sum_total" id="sum_total"></span></p>
+            <hr>
+            <p>Shipping: $ <span class="shipping" id="shipping"></span></p>
+            <p class="information">If subtotal > 200$ - SHIPPING is FREE &#128526</p>
+            <hr>
+            <p>Grand total: $ <span class="grand_total" id="grand_total"></span></p>
+            <hr>
+            <button>CHECK OUT</button>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div>
+            <h1 class="uppercase">ORDERING ONLINE</h1>
+            <nav class="nav_footer">
+                <ul>
+                    <li><a href="#">Account Login</a></li>
+                    <li><a href="#">Our Guarantee</a></li>
+                    <li><a href="#">Sportif Stretch Guide</a></li>
+                    <li> <a href="#">Size Chart &amp; Sizing Information</a></li>
+                    <li><a href="#">Hemming Information</a></li>
+                    <li><a href="#">Ordering &amp; Payment</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h1 class="uppercase">ABOUT SPORTIF</h1>
+            <nav class="nav_footer">
+                <ul>
+                    <li><a href="#">COVID-19 Response</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Legacy</a></li>
+                    <li><a href="#">Good Sam Program</a></li>
+                    <li><a href="#">Privacy &amp; Security</a></li>
+                    <li> <a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h1 class="uppercase">QUICK LINKS</h1>
+            <nav class="nav_footer">
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shop Online Catalog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h1>GET TO KNOW US</h1>
+            <p>Sign up for our weekly newsletter and get a 10% off coupon by email for your first order!</p>
+            <div class="footer_btn">
+                <label for="email">Sign Up for Our Newsletter:</label> <br>
+                <input class="email" type="email" name="email" id="email" placeholder="EMAIL ADDRESS">
+                <input class="submit uppercase" type="submit" value="SUBSCRIBE">
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+    <button class="to_up" id="to_up">
+        <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_0_165)">
+                <circle cx="45.5" cy="41.5" r="41.5" fill="#A04955"/>
+            </g>
+            <path d="M47.0607 22.9393C46.4749 22.3536 45.5251 22.3536 44.9393 22.9393L35.3934 32.4853C34.8076 33.0711 34.8076 34.0208 35.3934 34.6066C35.9792 35.1924 36.9289 35.1924 37.5147 34.6066L46 26.1213L54.4853 34.6066C55.0711 35.1924 56.0208 35.1924 56.6066 34.6066C57.1924 34.0208 57.1924 33.0711 56.6066 32.4853L47.0607 22.9393ZM47.5 59V24H44.5V59H47.5Z" fill="white"/>
+            <defs>
+                <filter id="filter0_d_0_165" x="0" y="0" width="91" height="91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_165"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_165" result="shape"/>
+                </filter>
+            </defs>
+        </svg>            
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="../script/Cart.js"></script>
+</body>
+</html>

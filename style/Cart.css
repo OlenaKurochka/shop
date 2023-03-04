@@ -1,0 +1,287 @@
+@import url("../style/normalize.css");
+
+:root {
+    --oswald: 'Oswald', sans-serif;
+    --main_color: #A04955;
+    --color_white: #fff;
+    --color_black: #000;
+    font-size: 10px;
+}
+
+body {
+    font-family: var(--oswald);
+    font-weight: 400;
+    padding: 0;
+    margin: 0 2rem;
+
+    max-width: 1920px;
+    min-width: 1200px;
+}
+body a{
+    text-decoration: none;
+    transition: .25s;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*Header*/
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.3rem 0;
+    background-color: var(--color_white);
+
+}
+
+.header-top__nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.header-top nav {
+    width: 40%;
+}
+
+.header-top__nav-item a {
+    font-size: 2rem;
+    color: #333333;
+}
+
+.header-top__nav-item a:hover {
+    font-size: 2rem;
+    color: var(--main_color);
+}
+.header-top__nav-item{
+    display: flex;
+    align-items: center;
+}
+.header-top__nav-item__img{
+    width: 6rem;
+}
+
+.header-top__nav-item__img:hover{
+    border: 1px solid var(--main_color);
+    box-shadow: inset 0px 0px 5px 3px var(--main_color);
+}
+
+
+/*Way*/
+.way{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    margin-left: 1rem;
+}
+
+.way a{
+    display: flex;
+    align-items: center; 
+    font-size: 3.2rem;
+    color: var(--color_black);
+}
+
+.way>img{
+    margin: 0 1.5rem;
+}
+
+/*main*/
+.cart_empty{
+    text-align: center;
+    color: var(--color_black);
+    text-decoration: none;
+}
+
+.cart_empty a{
+    color: var(--color_black);
+}
+
+.none{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.main_table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    font-size: 2rem;
+}
+.divForItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid var(--main_color);
+    margin-bottom: 2rem;
+}
+
+.itemImg{
+    width: 10rem;
+}
+
+.divForItem{
+    width: 80%;
+
+}
+
+.divForDescriotion{
+    width: 60%;
+}
+
+.btnDelete{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.btnDelete img{
+    margin: 0;
+}
+
+.btnDelete img:hover{
+    box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.total{
+    width: 30%;
+    color: var(--main_color);
+    text-align: right;
+    margin-bottom: 10rem;
+    font-size: 3rem;
+}
+
+.information{
+    color: var(--color_black);
+    font-size: 1.6rem;
+}
+
+.total button{
+    background-color: var(--main_color);
+    width: 100%;
+    height: 5rem;
+    padding: .4rem 4rem ;
+    color: var(--color_white);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 2.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.4rem 3rem var(--color_black);
+    backdrop-filter: blur(0.5rem);
+    margin-right: 2rem;
+    font-size: large;
+}
+
+.total button:hover{
+    color: #333333;
+    box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+/* footer */
+footer{
+    background-color: var(--main_color);
+    padding: 5rem 6rem;
+    color: var(--color_white);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.nav_footer{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 180.8%;
+}
+
+.nav_footer ul li a{
+    color: var(--color_white);
+}
+.nav_footer ul li a:hover{
+    text-decoration: underline;
+}
+
+footer div p{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.footer_btn{
+    position: relative;
+}
+
+.footer_btn p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.footer_btn label{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.email{
+    height: 6rem;
+    width: 90%;
+    padding-left: 2rem;
+
+}
+
+.email::placeholder{
+    color: var(--main_color);
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+.submit{
+    font-weight: 400;
+    height: 5rem;
+    font-size: 2rem;
+    color: #F3F3F3;
+    background-color: var(--main_color);
+    padding: .5rem 4.5rem;
+    border: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 6rem;
+    cursor: pointer;
+}
+
+
+.to_up{
+    position: fixed;
+    top: 80rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
